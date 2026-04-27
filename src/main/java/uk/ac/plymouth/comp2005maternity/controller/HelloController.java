@@ -8,7 +8,6 @@ import uk.ac.plymouth.comp2005maternity.service.MaternityService;
 import java.util.List;
 
 
-// CI test trigger
 @RestController
 public class HelloController {
 
