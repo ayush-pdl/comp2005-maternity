@@ -7,7 +7,6 @@ import uk.ac.plymouth.comp2005maternity.service.MaternityService;
 
 import java.util.List;
 
-
 @RestController
 public class HelloController {
 
