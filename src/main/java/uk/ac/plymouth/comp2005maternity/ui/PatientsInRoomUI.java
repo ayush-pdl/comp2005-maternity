@@ -46,8 +46,15 @@ public class PatientsInRoomUI {
             try {
                 String roomId = roomInput.getText().trim();
 
+                // Empty validation
                 if (roomId.isEmpty()) {
                     resultArea.setText("Please enter a room ID before searching.");
+                    return;
+                }
+
+                // Numeric validation
+                if (!roomId.matches("\\d+")) {
+                    resultArea.setText("Please enter a valid numeric room ID.");
                     return;
                 }
 
@@ -101,7 +108,6 @@ public class PatientsInRoomUI {
 
         scanner.close();
 
-        String response = responseBuilder.toString();
-        return response;
+        return responseBuilder.toString();
     }
 }
